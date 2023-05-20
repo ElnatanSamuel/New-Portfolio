@@ -6,13 +6,13 @@ import { UilBrowser } from "@iconscout/react-unicons";
 const Projects = () => {
   return (
     <div className="max-w-7xl mt-44 mb-12">
-      <div className="flex justify-start items-center">
-        <p className="projectshead text-lg font-bold ml-32">
+      <div className="projuctheaddiv">
+        <p className="projectshead text-lg font-bold">
           HERE ARE SOME OF MY PROJECTS
         </p>
       </div>
       <div className="flex flex-col justify-center items-center space-y-12 mt-12">
-        <div className="projcard grid grid-cols-2">
+        <div className="projcard">
           <div>
             <img
               className="cardimg"
@@ -22,7 +22,7 @@ const Projects = () => {
           </div>
           <div className="flex flex-col items-center space-y-6">
             <p className="font-bold text-lg pt-4">Ecom App</p>
-            <p className="text-md opacity-60 w-80 text-center">
+            <p className="cardtext text-md opacity-60  text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               error atque incidunt molestiae. Eaque iste eius debitis aliquid
               velit porro quaerat consectetur voluptate illo odio aliquam nemo,
@@ -46,10 +46,10 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="projcard grid grid-cols-2">
+        <div className="projcard2 ">
           <div className="flex flex-col items-center space-y-6">
             <p className="font-bold text-lg pt-4">Ecom App</p>
-            <p className="text-md opacity-60 w-80 text-center">
+            <p className="cardtext text-md opacity-60 text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               error atque incidunt molestiae. Eaque iste eius debitis aliquid
               velit porro quaerat consectetur voluptate illo odio aliquam nemo,
@@ -80,7 +80,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="projcard grid grid-cols-2">
+        <div className="projcard">
           <div>
             <img
               className="cardimg"
@@ -90,7 +90,7 @@ const Projects = () => {
           </div>
           <div className="flex flex-col items-center space-y-6">
             <p className="font-bold text-lg pt-4">Ecom App</p>
-            <p className="text-md opacity-60 w-80 text-center">
+            <p className="cardtext text-md opacity-60 text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               error atque incidunt molestiae. Eaque iste eius debitis aliquid
               velit porro quaerat consectetur voluptate illo odio aliquam nemo,

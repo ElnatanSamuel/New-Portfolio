@@ -12,26 +12,26 @@ import { SiTailwindcss } from "react-icons/si";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen flex flex-col justify-center mt-12 max-w-7xl">
-      <div className="grid grid-cols-2 space-x-16">
-        <div className="flex flex-col space-y-8 ml-32">
-          <p className="heroname text-black text-7xl font-bold opacity-80">
+    <div className="herosec">
+      <div className="mainhero space-x-16">
+        <div className="herodisplay flex flex-col space-y-8 ">
+          <p className="heroname text-black font-bold opacity-80">
             Elnatan Samuel
           </p>
-          <p className="herotext text-gray-500 text-lg">
+          <p className="herotext text-gray-500">
             A passionate Front-End React Developer eager to learn new skills
           </p>
-          <button className="px-3 w-28 py-3 bg-black text-white text-sm border-none mr-12 rounded-3xl opacity-80">
+          <button className="resumebtn px-3 w-28 py-3 bg-black text-white text-sm border-none  rounded-3xl opacity-80">
             Resume
           </button>
         </div>
-        <div>
+        <div className="imgdiv">
           <img className="heroimg" src={WelcomeSVG} alt="" />
         </div>
       </div>
-      <div className="ml-32 mt-16 flex items-center">
+      <div className="herotech">
         <p className="font-bold opacity-60">Tech stack:</p>
-        <div className="ml-12 space-x-12">
+        <div className="allstack">
           <div className="tooltip">
             <FontAwesomeIcon
               className="text-4xl"

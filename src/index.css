@@ -13,14 +13,40 @@
 body {
   font-family: "Roboto", sans-serif;
   background: #f9f9f9;
+
+  position: absolute;
+  width: 100vw;
+}
+
+.herosec {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80rem;
+  margin-top: 3rem;
+}
+
+.mainhero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.herodisplay {
+  margin-left: 8rem;
 }
 
 .heroname {
   font-family: "Yellowtail", cursive;
+  font-size: 4.5rem /* 72px */;
+  line-height: 1;
 }
 
 .herotext {
   width: 450px;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
 }
 
 .heroimg {
@@ -35,10 +61,23 @@ body {
   /* margin-top: -60px; */
 }
 
+.herotech {
+  margin-left: 8rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.resumebtn {
+  margin-right: 3rem;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
   /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
 }
 
@@ -66,8 +105,23 @@ body {
   visibility: visible;
 }
 
+.allstack {
+  margin-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .aboutsec {
   background: rgba(255, 255, 255, 1);
+  max-width: 80rem /* 1280px */;
+}
+
+.aboutdiv {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-left: 6rem /* 96px */;
 }
 
 .abouthead {
@@ -78,17 +132,195 @@ body {
   width: 450px;
 }
 
+.aboutmaintext {
+  width: 450px;
+}
+
+.projuctheaddiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .projectshead {
   color: #147efb;
+  margin-left: 8rem /* 128px */;
 }
 
 .projcard {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projcard2 {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .cardimg {
   width: 500px;
+}
+
+.cardtext {
+  width: 320px;
+}
+
+@media (max-width: 768px) {
+  .herosec {
+    margin-top: 10rem;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainhero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-left: 0px;
+
+    width: 100%;
+  }
+
+  .imgdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroimg {
+    width: 350px;
+    aspect-ratio: 4/3;
+    margin-top: 200px;
+    margin-bottom: 20px;
+  }
+
+  .herotext {
+    text-align: center;
+  }
+  .herodisplay {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+
+  .aboutdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+  .herotech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .resumebtn {
+    margin-right: 0rem;
+  }
+
+  .allstack {
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+
+  .aboutdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+  }
+
+  .abouttext {
+    text-align: center;
+  }
+
+  .projectshead {
+    text-align: center;
+    margin-left: 0rem;
+  }
+
+  .projuctheaddiv {
+    justify-content: center;
+  }
+
+  .projcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projcard2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .heroname {
+    font-size: 3.5rem /* 72px */;
+    line-height: 1;
+  }
+
+  .herotext {
+    width: 350px;
+    font-size: 1rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+  }
+
+  .aboutmaintext {
+    width: 350px;
+    text-align: center;
+  }
+  .abouttext {
+    width: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heroname {
+    font-size: 2.5rem /* 72px */;
+    line-height: 1;
+  }
+
+  .herotext {
+    width: 250px;
+    font-size: 0.8rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+  }
+
+  .aboutmaintext {
+    width: 250px;
+    text-align: center;
+  }
+  .abouttext {
+    width: 250px;
+  }
+
+  .herotech {
+    margin-left: 20px;
+  }
+
+  .cardtext {
+    width: 260px;
+  }
 }
