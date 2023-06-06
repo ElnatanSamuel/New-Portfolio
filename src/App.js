@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="App max-w-7xl m-auto">
+    <div className="App">
       <Navbar />
       <HeroSection />
       <AboutMe />

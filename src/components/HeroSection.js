@@ -5,6 +5,7 @@ import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faSass } from "@fortawesome/free-brands-svg-icons";
 import { faBootstrap } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { DiMongodb } from "react-icons/di";
@@ -12,7 +13,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 const HeroSection = () => {
   return (
-    <div className="herosec">
+    <div className="herosec max-w-7xl m-auto">
       <div className="mainhero space-x-16">
         <div className="herodisplay flex flex-col space-y-8 ">
           <p className="heroname text-black font-bold opacity-80">
@@ -32,7 +33,7 @@ const HeroSection = () => {
       <div className="herotech">
         <p className="font-bold opacity-60">Tech stack:</p>
         <div className="allstack">
-          <div className="tooltip">
+          {/* <div className="tooltip">
             <FontAwesomeIcon
               className="text-4xl"
               icon={faHtml5}
@@ -47,7 +48,7 @@ const HeroSection = () => {
               style={{ color: "#33a9dc" }}
             />
             <span className="tooltiptext">CSS</span>
-          </div>
+          </div> */}
 
           <div className="tooltip">
             <FontAwesomeIcon
@@ -79,6 +80,15 @@ const HeroSection = () => {
               style={{ color: "#8512f7" }}
             />
             <span className="tooltiptext">Bootstrap</span>
+          </div>
+
+          <div className="tooltip">
+            <FontAwesomeIcon
+              className="text-4xl"
+              icon={faSass}
+              style={{ color: "#ea4c89" }}
+            />
+            <span className="tooltiptext">SASS</span>
           </div>
 
           <div className="tooltip">

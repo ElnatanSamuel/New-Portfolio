@@ -13,9 +13,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background: #f9f9f9;
-
-  position: absolute;
-  width: 100vw;
+  overflow-x: hidden;
 }
 
 .herosec {
@@ -76,7 +74,7 @@ body {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 
   /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
 }
@@ -111,6 +109,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 40px;
 }
 
 .aboutsec {
@@ -154,6 +153,7 @@ body {
   box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 400px;
 }
 
 .projcard2 {
@@ -163,10 +163,18 @@ body {
   box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 400px;
 }
 
 .cardimg {
   width: 500px;
+}
+
+.image {
+  overflow-y: hidden;
+}
+
+.image:hover {
 }
 
 .cardtext {

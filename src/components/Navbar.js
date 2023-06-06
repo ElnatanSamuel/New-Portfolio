@@ -5,7 +5,7 @@ import { UilEnvelope } from "@iconscout/react-unicons";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-16 fixed top-0 z-50 flex items-center justify-end max-w-7xl bg-white">
+    <div className="w-full h-16 fixed top-0 z-50 flex items-center justify-end bg-white">
       <div className="flex space-x-4 justify-center items-center mr-6">
         <UilGithub className="cursor-pointer" color="#000" size="26" />
         <UilLinkedin className="cursor-pointer" color="#000" size="26" />

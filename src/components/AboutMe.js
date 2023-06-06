@@ -3,7 +3,7 @@ import AboutSVG from "../assets/undraw_welcoming_re_x0qo.svg";
 
 const AboutMe = () => {
   return (
-    <div className="aboutsec flex items-center">
+    <div className="aboutsec  max-w-7xl m-auto flex items-center">
       <div className="aboutdiv">
         <div>
           <img className="heroimgabout" src={AboutSVG} alt="" />
